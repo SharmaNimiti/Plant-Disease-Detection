@@ -63,6 +63,19 @@ It enables **early detection**, reduces crop loss, and supports smarter agricult
 
 ---
 
+📊 Dataset
+Name: PlantVillage Dataset
+Total Images: ~54,000+
+Classes: 38 plant disease categories
+Crops Included:
+Apple 🍎
+Tomato 🍅
+Potato 🥔
+Corn 🌽
+Grape 🍇
+Strawberry 🍓
+and more...
+
 ## ⚙️ How It Works
 
 ```text
