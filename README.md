@@ -1,62 +1,74 @@
-# Plant 🌱 Disease 🐛 Detection 🔎
+# 🌿 Plant Disease Detection System
 
-Plant Disease Detection is an innovative machine learning project that harnesses the power of Convolutional Neural Networks (CNN) and deep learning techniques to identify and classify diseases in plants. The primary objective is to offer farmers and agricultural experts a valuable tool for swift plant health diagnosis, facilitating timely intervention and minimizing the risk of crop loss.
+![Python](https://img.shields.io/badge/Python-3.8+-blue)
+![Framework](https://img.shields.io/badge/Framework-Streamlit-red)
+![Deep Learning](https://img.shields.io/badge/DeepLearning-TensorFlow%20%7C%20Keras-orange)
+![Status](https://img.shields.io/badge/Status-Active-success)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-[**Live Demo**](https://saurabhsinghdhami-plant-disease-detection-main-app-p8d5ks.streamlit.app/)
+An AI-powered **Plant Disease Detection Web App** built using **Streamlit** and **Deep Learning (CNN)**.  
+This system helps farmers and agricultural experts detect plant diseases from leaf images and provides **treatment recommendations**.
 
-## Project Structure 📂
+---
 
-The project comprises essential components:
+## 🌟 Project Overview
 
-- `Plant_Disease_Detection.ipynb`: Jupyter Notebook with the code for model training.
-- `main_app.py`: Streamlit web application for plant disease prediction.
-- `plant_disease_model.h5`: Pre-trained model weights.
-- `requirements.txt`: List of necessary Python packages.
+The Plant Disease Detection System uses a trained **Convolutional Neural Network (CNN)** model to classify plant leaf images into disease categories.  
+It enables **early detection**, reduces crop loss, and supports smarter agricultural decisions.
 
-## Installation 🚀
+---
 
-To run the project locally, follow these steps:
+## 🚀 Features
 
-1. **Clone the repository:**
+### 🌿 Disease Detection
+- Upload plant leaf images
+- Detect diseases using deep learning model
+- Provides instant prediction results
 
-```bash
-git clone https://github.com/SAURABHSINGHDHAMI/Plant-Disease-Detection.git
-```
+---
 
-2. Navigate to the project directory:
+### 🧠 AI Model
+- CNN-based classification model
+- Trained on **PlantVillage Dataset**
+- Supports multiple crop disease categories
 
-```bash
-cd Plant-Disease-Detection
-```
+---
 
-3. **Install the required packages:**
+### 💊 Treatment Recommendations
+- Displays suggested treatments based on detected disease
+- Helps farmers take immediate action
 
-```bash
-pip install -r requirements.txt
-```
+---
 
-4. **Run the Streamlit web application:**
+### 📊 Informational Pages
+- **Home:** Overview of the system
+- **About:** Dataset and model details
+- **Treatment:** Detailed disease explanations and solutions
 
-```bash
-streamlit run main_app.py
-```
+---
 
-## Usage 🌿
+### 🎨 User Interface
+- Interactive UI using Streamlit
+- Custom CSS styling
+- Sidebar navigation
 
-Once the application is running, open your web browser and navigate to [http://localhost:8501](http://localhost:8501). Upload an image of a plant leaf, and the system will predict if it is affected by any disease.
+---
 
-## Model Training 🧠
+## 🛠️ Tech Stack
 
-The model was trained using the `Plant_Disease_Detection.ipynb` notebook. It employs a Convolutional Neural Network architecture to classify plant images into different disease categories. The trained model weights are saved in `plant_disease_model.h5`.
+- **Frontend/UI:** Streamlit  
+- **Backend:** Python  
+- **Deep Learning:** TensorFlow, Keras  
+- **Image Processing:** OpenCV, PIL, NumPy  
 
-## Web Application 🌐
+---
 
-The web application (`main_app.py`) empowers users to interact with the trained model. Upload plant images, and the application provides real-time predictions regarding the health of the plant.
+## ⚙️ How It Works
 
-## Requirements 🛠️
-
-- Keras==2.8.0
-- numpy==1.21.4
-- streamlit==1.18.0
-- opencv-python-headless==4.5.3
-- tensorflow==2.7.0
+```text
+1. User uploads plant leaf image
+2. Image is resized to 256x256 pixels
+3. Model processes image
+4. Prediction generated using CNN
+5. Disease label displayed
+6. Treatment recommendation shown
